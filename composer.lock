@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66700143885a597329d5f31ebb387e9c",
+    "content-hash": "2220a528dd5e32623f25525db0943fb6",
     "packages": [
         {
             "name": "brick/math",
@@ -682,27 +682,22 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v4.5.3",
+            "version": "v5.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "a716fb03f965dc0846df479e14388b1b4b93d7ce"
+                "reference": "63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a716fb03f965dc0846df479e14388b1b4b93d7ce",
-                "reference": "a716fb03f965dc0846df479e14388b1b4b93d7ce",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3",
+                "reference": "63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3",
                 "shasum": ""
             },
             "replace": {
                 "twitter/bootstrap": "self.version"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -731,7 +726,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twbs/bootstrap/issues",
-                "source": "https://github.com/twbs/bootstrap/tree/v4.5.3"
+                "source": "https://github.com/twbs/bootstrap/tree/v5.0.0-beta1"
             },
             "funding": [
                 {
@@ -739,7 +734,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-10-13T15:38:30+00:00"
+            "time": "2020-12-07T16:18:16+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2889,7 +2884,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "twbs/bootstrap": 10
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

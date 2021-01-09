@@ -2,7 +2,7 @@
     "require": {
         "phpmailer/phpmailer": "^6.2",
         "vlucas/phpdotenv": "^5.2",
-        "twbs/bootstrap": "4.5.3",
+        "twbs/bootstrap": "5.0.0-beta1",
         "ramsey/uuid": "^4.1"
     },
     "require-dev": {
