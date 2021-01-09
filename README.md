@@ -60,7 +60,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* Installed composer
+* Installed and working composer
 
 ### Installation
 
@@ -70,8 +70,10 @@ To get a local copy up and running follow these simple steps.
    ```
 2. Install composer packages
    ```sh
-    php composer.phar install
+    composer install
    ```
+3. Copy .env.example to .env and configure your settings
+
 
 <!-- LICENSE -->
 ## License
