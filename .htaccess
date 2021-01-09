@@ -1,0 +1,25 @@
+# Force secure connection over SSL
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+# Choose index.php first if exist
+DirectoryIndex index.php index.html
+
+# Redirect any match that contain /.git/ to 404 error
+RedirectMatch 404 /\.git
+
+# Restricted access to some type of files
+<FilesMatch "((\.(lock|cache|db))|CHANGELOG.md|README.md|^(.*\.config|.*\.example|.*\.env|.*\.htaccess|.*\.gitignore)(.*?))$">
+	# Apache < 2.3
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+		Deny from all
+		Satisfy All
+	</IfModule>
+	# Apache ≥ 2.3
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+</FilesMatch>
