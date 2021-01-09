@@ -60,7 +60,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* composer
+* Installed composer
 
 ### Installation
 
@@ -82,7 +82,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Pixelao - [@Pixelao](https://twitter.com/pixelao) - contacto@adrianmr.com
+Pixelao - [@Pixelao](https://twitter.com/_pixelao) - contacto@adrianmr.com
 
 Project Link: [https://github.com/pixelao/simple-php-skeleton](https://github.com/pixelao/simple-php-skeleton)
 
