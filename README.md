@@ -73,6 +73,7 @@ To get a local copy up and running follow these simple steps.
     composer install
    ```
 3. Copy .env.example to .env and configure your settings
+4. Start code!
 
 
 <!-- LICENSE -->
