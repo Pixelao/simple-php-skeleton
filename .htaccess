@@ -9,9 +9,10 @@ DirectoryIndex index.php index.html
 
 # Redirect any match that contain /.git/ to 404 error
 RedirectMatch 404 /\.git
+RedirectMatch 404 /\.github
 
 # Restricted access to some type of files
-<FilesMatch "((\.(lock|cache|db))|CHANGELOG.md|README.md|^(.*\.config|.*\.example|.*\.env|.*\.htaccess|.*\.gitignore)(.*?))$">
+<FilesMatch "((\.(lock|cache|db))|CHANGELOG.md|README.md|CODE_OF_CONDUCT.md|composer.json|composer.lock|^(.*\.config|.*\.example|.*\.env|.*\.htaccess|.*\.gitignore)(.*?))$">
 	# Apache < 2.3
 	<IfModule !mod_authz_core.c>
 		Order allow,deny
