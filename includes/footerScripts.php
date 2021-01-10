@@ -3,3 +3,4 @@
     <script src="dist/js/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/axios.min.js"></script>
+    <script src="dist/js/global-custom.js"></script>
